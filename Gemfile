@@ -23,10 +23,11 @@ gem 'fastercsv', '1.5.3', :platforms => :ruby_18
 # (using standard csv lib if ruby version is 1.9)
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 group :development, :test do
+  gem 'mysql2'
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
