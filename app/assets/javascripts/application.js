@@ -3,6 +3,7 @@
 
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
 //= require jquery-ui
 //= require jquery.gritter.min
 //= require jquery.scrollTo-min
