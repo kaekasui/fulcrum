@@ -11,6 +11,10 @@ group :assets do
   gem 'ejs'
 end
 
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
 gem 'jquery-rails'
 
 gem 'devise', "~> 2.0.5"
