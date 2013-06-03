@@ -38,11 +38,6 @@ $aluminium-4:   #888a85;
 $aluminium-5:   #555753;
 $aluminium-6:   #2e3436;
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
 a img {
   border: 0;
 }
@@ -104,78 +99,6 @@ ul#primary-nav li.secondary ul li {
   white-space: nowrap;
   text-align: left;
   display: block;
-}
-
-#title_bar {
-  background: #efefef;
-  @include background(linear-gradient(top, #efefef, #dfe1e2));
-  @include box-shadow(0 1px 2px #aaaaaa);
-  text-shadow: white 0 1px 0;
-  border-bottom: 1px solid #ededed;
-  padding: 5px 10px 3px 10px;
-  font-size: 1.0em;
-  line-height: 140%;
-  margin-bottom: 0.5em;
-  color: #5e6469;
-  position: relative;
-  margin: 0;
-  padding: 10px 1em;
-
-  div.velocity {
-    font-size: 1.6em;
-    float: right;
-    position: relative;
-
-    div.velocity_override_container {
-      width: 220px;
-      position: absolute;
-      right: 0;
-      top: 30px;
-      background: #efefef;
-      border: 1px solid #ccc;
-      @include border-radius(3px);
-      @include single-box-shadow;
-      z-index: 1;
-
-      ul {
-        margin: 10px;
-        padding: 0;
-        li {
-          list-style-type: none;
-        }
-      }
-    }
-
-    #velocity_value {
-      cursor: pointer;
-      font-weight:bold;
-    }
-  }
-
-  div.velocity.fake #velocity_value {
-    color: #f00;
-    font-style: italic;
-  }
-
-  #add_story {
-    @include background(sprite($icons-sprites, feature, 2, 2),
-                        linear-gradient(top, $aluminium-3, $aluminium-3*0.75));
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0.2em 0.4em 0.2em 18px;
-    @include border-radius(3px);
-    border: 1px solid $aluminium-5;
-    cursor: pointer;
-    font-size: small;
-    color: white;
-    text-shadow:  $aluminium-5 0 1px 0;
-    text-decoration: none;
-  }
-}
-
-#title_bar h1 {
-  font-size: 2em;
-  margin: 0.3em 0;
 }
 
 #main {

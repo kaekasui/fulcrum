@@ -71,11 +71,16 @@ $(function() {
 });
 </script>
 
-<% content_for :title_bar do %>
+<% content_for :velocity do %>
   <div id="velocity" class="velocity"></div>
-  <%= render :partial => 'projects/nav',
-             :locals => {:project => @project, :show_column_toggles => true} %>
-             | <a id="add_story" href="#"><%= t('add story') %></a>
+<% end %>
+
+<% content_for :menu do %>
+  <%= render partial: 'projects/menu', locals: {project: @project, show_column_toggles: true} %>
+<% end %>
+
+<% content_for :status do %>
+  <%= render partial: 'projects/status', locals: {project: @project, show_column_toggles: true} %><a id="add_story" href="#"><%= t('add story') %></a>
 <% end %>
 
 <table class="stories" width="100%">

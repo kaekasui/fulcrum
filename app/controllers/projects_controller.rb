@@ -14,6 +14,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1.xml
   def show
     @project = current_user.projects.find(params[:id])
+    @title = @project.name
     @story = @project.stories.build
 
     respond_to do |format|
@@ -37,6 +38,7 @@ class ProjectsController < ApplicationController
   # GET /projects/1/edit
   def edit
     @project = current_user.projects.find(params[:id])
+    @title = @project.name
     @project.users.build
   end
 
